@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>How to use posthtml-extend</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <if condition="foo === 'bar'">
+        <div class="{{ className }}">My name is {{ name }}</div>
+      </if>
+
+      <if condition="foo !== 'bar'">
+        <div class="{{ name }}">My name is {{ className }}</div>
+      </if>
+    </div>
+
+    <footer>footer content</footer>
+  </body>
+</html>

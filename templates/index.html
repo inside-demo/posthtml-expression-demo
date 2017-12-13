@@ -1,0 +1,17 @@
+<extends src="layout.html">
+    <block name="title">How to use posthtml-extend</block>
+
+    <block name="content">
+        <if condition="foo === 'bar'">
+          <div class="{{ className }}">
+            My name is {{ name }}
+          </div>
+        </if>
+
+        <if condition="foo !== 'bar'">
+          <div class="{{ name }}">
+            My name is {{ className }}
+          </div>
+        </if>
+    </block>
+</extends>
