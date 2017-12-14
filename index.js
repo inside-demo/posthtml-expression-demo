@@ -7,13 +7,13 @@ const plugins = [
     	encoding: 'utf8',
     	root: 'templates'
 	}),
-	// require('posthtml-expressions')({ 
-	// 	locals: { 
-	// 		className: 'intro', 
-	// 		name: 'Marlo',
-	// 		foo: 'foo'
-	// 	}
-	// }),
+	require('posthtml-expressions')({ 
+		locals: { 
+			className: 'intro', 
+			name: 'Marlo',
+			foo: 'bar'
+		}
+	}),
 	require('posthtml-beautify')()
 ]
 posthtml(plugins)

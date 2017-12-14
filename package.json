@@ -15,7 +15,7 @@
     "posthtml": "^0.11.0",
     "posthtml-beautify": "^0.1.8",
     "posthtml-expressions": "^1.1.0",
-    "posthtml-extend": "^0.1.2"
+    "posthtml-extend": "^0.2.0"
   },
   "babel": {
     "presets": [
